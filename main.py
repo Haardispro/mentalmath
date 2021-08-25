@@ -18,37 +18,46 @@ w.iconphoto(False, logo)
 def ranum():
     a = random.randint(0, 100)
     b = random.randint(0, 50)
-    sum1 = a+b
-    sub = a-b
-    product = a*b
+    ranum.sum1 = a+b
+    ranum.sub = a-b
+    ranum.product = a*b
     #quotient is a/b only if a%b = 0
     #quotient = a/b
-    res_list = [sum1, sub, product]#, quotient]
-    res = random.choice(res_list)
-    sign = ""
-    if res == sum1:
-        sign = "+"
-    if res == sub:
-        sign = "-"
-    if res == product:
-        sign = "X"
+    res_list = [ranum.sum1, ranum.sub, ranum.product]#, quotient]
+    ranum.res = random.choice(res_list)
+    ranum.sign = ""
+    if ranum.res == ranum.sum1:
+        ranum.sign = "+"
+    if ranum.res == ranum.sub:
+        ranum.sign = "-"
+    if ranum.res == ranum.product:
+        ranum.sign = "X"
     """
     if res == quotient:
         sign = "/"
     """
-    ranum.x = (a, sign, b)
+    ranum.x = (a, ranum.sign, b)
     #print(res)
 
 ranum()
 
 #Functions
 def chext():
-    #ranum()     
-    #question = Label(w, text=ranum.x, font=font, fg="white", bg="#1e1e1e")
-    w.destroy()
-    #import main.py 
-    os.system("python main.py")
+    """
+    if ranum.sign == "+" and user_input.get() == ranum.sum1:
+        w.destroy()
+        os.system("python main.py")
 
+    if ranum.sign == "-" and user_input.get() == ranum.sub:
+        w.destroy()
+        os.system("python main.py")
+
+    if ranum.sign == "X" and user_input.get() == ranum.product:
+        w.destroy()
+        os.system("python main.py")
+    """
+    w.destroy()
+    os.system("python main.py")
 #Questions
 heading = Label(w, text="Mental Maths", font=font, fg="white", bg="#1e1e1e")
 question = Label(w, text=ranum.x, font=font, fg="white", bg="#1e1e1e")
