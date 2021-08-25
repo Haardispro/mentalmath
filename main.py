@@ -4,10 +4,11 @@ import random
 w = Tk()
 #w.geometry("800x600")
 w.title("Mental Maths")
+w.resizable(height=FALSE, width=FALSE)
 w.configure(bg="#1e1e1e")
 
 #--font
-font = ("JetBrains Mono", 14, "bold")
+font = ("JetBrains Mono", 20, "bold")
 #Questions
 
 def ranum():
