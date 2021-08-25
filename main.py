@@ -51,14 +51,15 @@ def chext():
         w.destroy()
         os.system("python main.py")
 
-    if ranum.sign == "-" and i == ranum.sub:
+    elif ranum.sign == "-" and i == ranum.sub:
         w.destroy()
         os.system("python main.py")
 
-    if ranum.sign == "X" and i == ranum.product:
+    elif ranum.sign == "X" and i == ranum.product:
         w.destroy()
         os.system("python main.py")
-    
+    else:
+        print("Wrong Nub")
     #w.destroy()
     #os.system("python main.py")
 #Questions
