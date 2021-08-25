@@ -1,5 +1,6 @@
 from tkinter import *
 import random
+import os
 
 w = Tk()
 #w.geometry("800x600")
@@ -9,6 +10,9 @@ w.configure(bg="#1e1e1e")
 
 #--font
 font = ("JetBrains Mono", 20, "bold")
+#Logo
+logo = PhotoImage(file = "logo.png")
+w.iconphoto(False, logo)
 #Questions
 
 def ranum():
@@ -39,7 +43,11 @@ ranum()
 
 #Functions
 def chext():
-    ranum()     
+    #ranum()     
+    #question = Label(w, text=ranum.x, font=font, fg="white", bg="#1e1e1e")
+    w.destroy()
+    #import main.py 
+    os.system("python main.py")
 
 #Questions
 heading = Label(w, text="Mental Maths", font=font, fg="white", bg="#1e1e1e")
