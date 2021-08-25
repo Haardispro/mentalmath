@@ -38,8 +38,7 @@ ranum()
 
 #Functions
 def chext():
-    ranum() 
-     
+    ranum()     
 
 #Questions
 heading = Label(w, text="Mental Maths", font=font, fg="white", bg="#1e1e1e")
