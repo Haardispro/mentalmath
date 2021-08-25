@@ -43,21 +43,24 @@ ranum()
 
 #Functions
 def chext():
-    """
-    if ranum.sign == "+" and user_input.get() == ranum.sum1:
+    i = user_input.get()
+    i = int(i)
+
+    
+    if ranum.sign == "+" and i == ranum.sum1:
         w.destroy()
         os.system("python main.py")
 
-    if ranum.sign == "-" and user_input.get() == ranum.sub:
+    if ranum.sign == "-" and i == ranum.sub:
         w.destroy()
         os.system("python main.py")
 
-    if ranum.sign == "X" and user_input.get() == ranum.product:
+    if ranum.sign == "X" and i == ranum.product:
         w.destroy()
         os.system("python main.py")
-    """
-    w.destroy()
-    os.system("python main.py")
+    
+    #w.destroy()
+    #os.system("python main.py")
 #Questions
 heading = Label(w, text="Mental Maths", font=font, fg="white", bg="#1e1e1e")
 question = Label(w, text=ranum.x, font=font, fg="white", bg="#1e1e1e")
