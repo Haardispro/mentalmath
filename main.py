@@ -49,15 +49,15 @@ def chext():
     
     if ranum.sign == "+" and i == ranum.sum1:
         w.destroy()
-        os.system("python main.py")
+        os.system("python3 main.py")
 
     elif ranum.sign == "-" and i == ranum.sub:
         w.destroy()
-        os.system("python main.py")
+        os.system("python3 main.py")
 
     elif ranum.sign == "X" and i == ranum.product:
         w.destroy()
-        os.system("python main.py")
+        os.system("python3 main.py")
     else:
         print("Wrong Nub")
     #w.destroy()
