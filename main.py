@@ -16,8 +16,8 @@ w.iconphoto(False, logo)
 #Questions
 
 def ranum():
-    a = random.randint(0, 100)
-    b = random.randint(0, 50)
+    a = random.randint(1, 100)
+    b = random.randint(1, 50)
     ranum.sum1 = a+b
     ranum.sub = a-b
     ranum.product = a*b
@@ -59,7 +59,7 @@ def chext():
         w.destroy()
         os.system("python3 main.py")
     else:
-        print("Wrong Nub")
+        import wrongnub
     #w.destroy()
     #os.system("python main.py")
 #Questions
