@@ -33,10 +33,12 @@ def Start():
             print()
             
 
-    # print(f"\n\t\tRobot Maks : {username} you got " + str(score) + f" out of {noOfquestions}")
-    f = open("Result.txt", "w")
-    f.write(f"Robot Maks : {username} you got " + str(score) + f" out of {noOfquestions}")
-    os.open("Result.txt", os.O_RDWR)
+    print(f"\n\t\tRobot Maks : {username} you got " + str(score) + f" out of {noOfquestions}")
+    # Optional Code for making a file with result of your mental math score.
+    # Sasta Database 
+    # f = open("Result.txt", "w")
+    # f.write(f"Robot Maks : {username} you got " + str(score) + f" out of {noOfquestions}")
+    # os.open("Result.txt", os.O_RDWR)
 while True:
     user_input = input("Enter a command: ")
     if user_input == "help":
